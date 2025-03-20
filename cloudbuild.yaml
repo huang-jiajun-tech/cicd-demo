@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  script: |
+    docker build -t us-docker.pkg.dev/baidao-test-666808/hjj-hub/quickstart-image:tag1 .
+  automapSubstitutions: true
+images:
+- 'us-docker.pkg.dev/baidao-test-666808/hjj-hub/quickstart-image:tag1'
